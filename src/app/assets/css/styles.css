@@ -1,0 +1,105 @@
+/* styles/FloatingCallButton.module.css */
+
+.floating-call-button {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+.floating-call-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.floating-wp-button {
+    position: fixed;
+    bottom: 140px;
+    right: 20px;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    
+}
+
+.floating-wp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .element {
+    animation: pulse 1s infinite;
+  }
+  .mobile{
+    display: none !important;
+  }
+  .options{
+    margin-left: 20px !important;
+    display: block;
+  }
+
+  @media screen and (max-width: 768px){
+    .options{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+        margin-left: 15px !important;
+      }
+  }
+
+
+
+  /* Back to Top */
+
+  /* components/BackToTopButton.css */
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top-button.show {
+    opacity: 1;
+}
+
+.back-to-top-button i {
+    font-size: 20px;
+}

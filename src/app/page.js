@@ -40,8 +40,8 @@ function Home() {
   const toggleMenu = () => {
     setMenu(!isOpen);
   };
-  const isMobile = window.innerWidth < 600;
-
+  // const isMobile = window.innerWidth < 600;
+const isMobile = typeof window !== "undefined" && window.innerWidth < 600;
   return (
     <>
       <Wrapper>

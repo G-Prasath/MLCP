@@ -13,7 +13,7 @@ import  '../assets/css/styles.css'
 // import required modules
 import { Autoplay, Pagination, Navigation, FreeMode } from "swiper/modules";
 import Image from "next/image";
-const isMobile = window.innerWidth < 600;
+// const isMobile = window.innerWidth < 600;
 
 export default function Clients() {
   
